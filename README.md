@@ -1,0 +1,5 @@
+This GitHub repository documents a practical Docker workflow for managing a MongoDB container. The process begins with the docker pull mongo command, which downloads the official MongoDB image from Docker Hub, establishing the foundational layer for the environment.
+
+Following the download, the user successfully creates and runs a container from this image, which is verified by the docker ps command. The output of this command confirms that a container named mongocontainer is active, and the MongoDB service is running and exposed on port 27017/tcp.
+
+The final stage of the workflow demonstrates an attempt to interact with the running container using the docker exec command to access the Mongo shell. Although this specific attempt encounters a "command not found" error—a common issue when the full client tools aren't included in the base image—it serves as a crucial learning point. This part of the repository highlights a typical troubleshooting scenario, providing a valuable example for users who might face similar challenges while working with containerized applications.
